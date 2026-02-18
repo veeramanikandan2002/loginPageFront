@@ -1,7 +1,7 @@
 import axios from "axios";
 import type { User } from "../types/User.ts";
 
-const API = "http://localhost:5000/api/users";
+const API = "https://loginpagebackend-6jrp.onrender.com/api/users";
 
 export const getUsers = () =>
   axios.get<{ data: User[] }>(API);
